@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Список завдань</title>
+</head>
+<body>
+    <h1>Список завдань</h1>
+    <ul>
+    {% for task in tasks %}
+        <li>
+            {{ task }}
+            <form action="{{ url_for('delete_task', task_id=loop.index0) }}" method="POST" style="display:inline;">
+                <button type="submit">❌ Видалити</button>
+            </form>
+        </li>
+    {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_task') }}">Додати нове завдання</a>
+</body>
+</html>І
