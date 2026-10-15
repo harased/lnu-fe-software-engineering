@@ -1,0 +1,48 @@
+.symbols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.symbols button{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.symbols button:hover{
+    background-color: #e0e0e0;
+}
+h1{
+    font-family: "Arial Black";
+    text-align: center;
+}
+.display{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+#display {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fff;
+}
